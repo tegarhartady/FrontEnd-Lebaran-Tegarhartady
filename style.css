@@ -1,0 +1,144 @@
+body {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    background-color: #f5f29c  !important;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.main {
+    display:flex;
+    --s: 100px;  /* size  */
+    --m: 4px;    /* space */
+    --r: calc(var(--s) + 4*var(--m) - 2px);
+  }
+  
+  .container1 {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .container1 div {
+    width: var(--s);
+    margin: var(--m);
+    height: var(--s);
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background: #008e0b;
+    margin-bottom: calc(var(--m) - var(--s)*0.5);
+  }
+  .container1::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 140%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--r) - 3px),      
+                     #000  0 var(--r));
+  }
+
+  .container2 {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .container2 div {
+    width: var(--s);
+    margin: var(--m);
+    height: var(--s);
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background: #70d058;
+    margin-bottom: calc(var(--m) - var(--s)*0.5);
+  }
+  /* .container2 div:nth-child(odd) {
+    background:green !important;
+  } */
+  .container2::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 140%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--r) - 3px),      
+                     #000  0 var(--r));
+  }
+  .container3 {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .container3 div {
+    width: var(--s);
+    margin: var(--m);
+    height: var(--s);
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background: #008e0b;
+    margin-bottom: calc(var(--m) - var(--s)*0.5);
+  }
+  /* .container3 div:nth-child(odd) {
+    background:green !important;
+  } */
+  .container3::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 140%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--r) - 3px),      
+                     #000  0 var(--r));
+  }
+  .container4 {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .container4 div {
+    width: var(--s);
+    margin: var(--m);
+    height: var(--s);
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background: #70d058;
+    margin-bottom: calc(var(--m) - var(--s)*0.5);
+  }
+  /* .container4 div:nth-child(odd) {
+    background:green !important;
+  } */
+  .container4::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 140%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--r) - 3px),      
+                     #000  0 var(--r));
+  }
+  .container5 {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .container5 div {
+    width: var(--s);
+    margin: var(--m);
+    height: var(--s);
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background: red;
+    margin-bottom: calc(var(--m) - var(--s)*0.5);
+  }
+  .container5 div:nth-child(odd) {
+    background:green !important;
+  }
+  .container5::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 140%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--r) - 3px),      
+                     #000  0 var(--r));
+  }
